@@ -14,13 +14,12 @@ const App = () => {
 
   return (
     <div className="App">
-      REACT REST
       <button onClick={axiosGet}>GET</button>
       {
-                data.map((item, index) => {
-                    return <div key={index}>{item.postId} - {item.name}</div>
-                })
-            }
+        data.map((item, index) => {
+            return <div key={index}>{item.postId} - {item.name}</div>
+        })
+      }
     </div>
   );
 }
